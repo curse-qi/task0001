@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>文章</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+
+        <header>
+            <a href="index.html"><h1>YourLOGO</h1></a>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="blog.html">文章</a></li>
+                <li><a href="gallery.html">作品</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+            <a href="https://github.com"><img src="images/icon-github.png" /></a>
+        </header>
+
+        <div class="blog_content">
+
+            <div class="left">
+                <div class="article">
+                    <div class="label">
+                        <div class="label_top">7.28</div>
+                        <div class="label_bottom">CSS</div>
+                    </div>
+                    <div class="text">
+                        <h4>css中需要注意的问题</h4>
+                        <p>1.适当地使用position：relative和position：absolute，需要绝对定位的元素，其父元素不要忘了设置相对定位，子元素才能随着屏幕的缩放而移动。</p>
+                        <p>2.当给内容改变padding值时，整个div的大小也会发生变化，需要在改变padding时适当调整div宽高。</p>
+                        <p>3.一些标签如p、h等默认有上下边距，在标签嵌套标签时，当布局发生问题或微小偏移，考虑是否是margin产生的。</p>
+                        <p>4.在嵌套的标签中，里层的某个类名即使是独一无二的，也尽量使用关联选择器的写法，以保证优先级最高，不会受到外层样式的影响。</p>
+                        <p>5.div高度自适应文字内容高度：最内层div不设置高度，最外层div都设置overflow:hidden（由于内层元素浮动导致外层不能自动撑开).</p>
+                        <p>6.盒子根据内容自动向上撑开的方法：不设置盒子高度，并用绝对定位固定bottom值。</p>
+                        <h6>curse_qi发表于2015年7月31日</h6>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="label">
+                        <div class="label_top">7.28</div>
+                        <div class="label_bottom">CSS</div>
+                    </div>
+                    <div class="text">
+                        <h4>css中的几个小技巧</h4>
+                        <p>1.嵌套的div中，子集设置了margin-top，若父级未设置，父级也会默认为该margin-top，可以给父级设置border-top:1px或者padding-top:1px来阻隔父级受到子集的影响。</p>
+                        <p>2.几块浮动的div高度一致且等于其中内容撑开最高的一块div的高度的方法：对div设置padding-bottom：1000px; margin-bottom: -1000px（1000非固定值，可设置更大）。</p>
+                        <P>3.若干浮动元素影响了布局时，适当用magin-top，margin-left来调整到合适位置。</P>
+                        <h6>curse_qi发表于2015年8月01日</h6>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="label">
+                        <div class="label_top">7.28</div>
+                        <div class="label_bottom">CSS</div>
+                    </div>
+                    <div class="text">
+                        <h4>css Get新技能</h4>
+                        <p>1.点击输入框时去掉默认的外框效果的方法：设置outline:0；焦点停在输入框时，默认value值消失的方法：将value替换为placeholder。eg:input type="text" placeholder="Keywords"。</p>
+                        <p>2.背景渐变以及半透明的方法。eg:background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(256,256,256,0.3)), to(rgba(256,256,256,0.1)));</p>
+                        <p>3.div部分设置背景色（如排行榜的效果）。eg:background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#522a5c), to(#fff), color-stop(0.6,#522a5c), color-stop(0.6,#fff));</p>
+                        <p>4.圆角矩形：border-radius: 30px；圆形边框：border-radius: 50%。</p>
+                        <p>5.背景图自适应屏幕宽高：background-size: contain；背景图位置：background-position: center top;（第一个值左右，第二个值上下）。</p>
+                        <h6>curse_qi发表于2015年8月02日</h6>
+                    </div>
+                </div>
+                <div class="page_number">
+                    <a href="#" class="number number_1">第一页</a>
+                    <a href="#" class="number number_1">上一页</a>
+                    <a href="#" class="number number_2">1</a>
+                    <a href="#" class="number number_2">2</a>
+                    <a href="#" class="number number_4">3</a>
+                    <a href="#" class="number number_2">4</a>
+                    <a href="#" class="number number_3">...</a>
+                    <a href="#" class="number number_1">下一页</a>
+                    <a href="#" class="number number_1">最后页</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="search">
+                    <input type="text" class="input" placeholder="Keywords"/>
+                    <input type="submit" class="submit" value=""/>
+                </div>
+                <div class="blog_menu">
+                    <a>HTML</a>
+                    <a>CSS</a>
+                    <a>JavaScript</a>
+                    <a>其他文章</a>
+                </div>
+                <div class="calendar">
+                    <h5><span class="arrow_1"></span>2 0 1 5 . 0 7<span class="arrow_2"></span></h5>
+                    <table>
+                        <tr>
+                            <td>S</td>
+                            <td>M</td>
+                            <td>T</td>
+                            <td>W</td>
+                            <td>T</td>
+                            <td>F</td>
+                            <td>S</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <img src="images/task0001_6.png" />
+            </div>
+            
+        </div>
+
+        <footer>
+            <ul class="menu">
+                <li><a href="#">主页</a></li>
+                <li><a href="blog.html">文章</a></li>
+                <li><a href="gallery.html">作品</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+            <div class="link">
+                <h6>学习资料</h6>
+                <ul>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                </ul>
+            </div>
+            <div class="link">
+                <h6>友情链接</h6>
+                <ul>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                </ul>
+            </div>
+            <div class="link">
+                <h6>学习资料</h6>
+                <ul>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                </ul>
+            </div>
+            <div class="link">
+                <h6>学习资料</h6>
+                <ul>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                </ul>
+            </div>
+            <div class="link">
+                <h6>友情链接</h6>
+                <ul>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                    <a href="#"><li>LINK</li><a>
+                </ul>
+            </div>
+            <p>版权信息</p>
+            <img src="images/icon-github.png" />
+        </footer>
+
+    </body>
+</html>
